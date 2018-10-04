@@ -1,0 +1,29 @@
+#test villager trade file
+
+[main]
+#Name of the collection of trades - Used for output filename and datapack namespace. No spaces.
+packname=TestTrades
+#Where the villagers should appear relative to where the command is run (X Y Z or X,Y,Z)
+offset=0 1 1
+#Additional offset per command/villager (so they don't appear all on top of each other
+offset_per_command=0 0 0
+#Should the villagers just be spawned normally (none) or in a boat (boat) or minecart (minecart)
+in=boat
+#Should the command be put in a text file (text), or in a data-pack (data)
+output=text
+#If the villager name should be always shown
+showName=true
+
+[items]
+dirt=minecraft:dirt
+magicDiamond=/give @p minecraft:diamond{display:{Name:"{\"text\":\"Magic Diamond\",\"color\":\"aqua\"}",Lore:["I'm Magic"]},Enchantments:[{id:"minecraft:unbreaking",lvl:10}],AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:100,Operation:0,UUIDLeast:579684,UUIDMost:474293}]} 1
+stone=stone
+xisuma=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Xisuma\"}"},SkullOwner:{Id:"c377aa0e-63e7-4ee5-b503-6d59512f1dc9",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2NhODE5Y2IxYmNlM2ZmMDk1MTMzMDUxODI4ODc4Yzk3YjZmY2VkMWM1ODgzNDQ2MjI3YmFkYjhiYmZkY2VmMSJ9fX0="}]}}} 1
+
+[villager]
+name=Test Trader
+head=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Xisuma\"}"},SkullOwner:{Id:"c377aa0e-63e7-4ee5-b503-6d59512f1dc9",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2NhODE5Y2IxYmNlM2ZmMDk1MTMzMDUxODI4ODc4Yzk3YjZmY2VkMWM1ODgzNDQ2MjI3YmFkYjhiYmZkY2VmMSJ9fX0="}]}}} 1
+profession=librarian
+trades:
+dirt, stone=magicDiamond
+magicDiamond 2=xisuma 3

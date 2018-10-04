@@ -1,0 +1,277 @@
+#This is the configuration file for the Mini-Blocks Recipe set
+#Most of the mini-blocks are from the head collection at 
+# http://heads.freshcoal.com/maincollection.php
+#or from
+# https://minecraft-heads.com/custom/heads 
+#
+
+[main]
+#Name of the collection of trades - Used for output filename and datapack namespace. No spaces.
+packname=RareItemTrades
+#Where the villagers should appear relative to where the command is run (X Y Z or X,Y,Z)
+offset=0 1 1
+#Additional offset per command/villager (so they don't appear all on top of each other
+offset_per_command=0 0 1
+#Should the villagers just be spawned normally (none) or in a boat (boat) or minecart (minecart)
+in=boat
+#Should the command be put in a text file (text), or in a data-pack (data)
+output=data
+#If the villager name should be always shown
+showName=true
+
+
+
+[items]
+#defines the items that will be involved in trades.  Should be <name>=<command>, with the command being a standard give commands for the item, or command can simply be the the minecraft block type if it has no extra data.  Can use https://mcstacker.net/ 's give command creator, just leave the target selector section with defaults.  
+#coral trades
+coral_fan_tube=minecraft:tube_coral_fan
+coral_fan_brain=minecraft:brain_coral_fan
+coral_fan_bubble=minecraft:bubble_coral_fan
+coral_fan_fire=minecraft:fire_coral_fan
+coral_fan_horn=minecraft:horn_coral_fan
+coral_bush_tube=minecraft:tube_coral
+coral_bush_brain=minecraft:brain_coral
+coral_bush_bubble=minecraft:bubble_coral
+coral_bush_fire=minecraft:fire_coral
+coral_bush_horn=minecraft:horn_coral
+coral_block_tube=minecraft:tube_coral_block
+coral_block_brain=minecraft:brain_coral_block
+coral_block_bubble=minecraft:bubble_coral_block
+coral_block_fire=minecraft:fire_coral_block
+coral_block_horn=minecraft:horn_coral_block
+coraldead_fan_tube=minecraft:dead_tube_coral_fan
+coraldead_fan_brain=minecraft:dead_brain_coral_fan
+coraldead_fan_bubble=minecraft:dead_bubble_coral_fan
+coraldead_fan_fire=minecraft:dead_fire_coral_fan
+coraldead_fan_horn=minecraft:dead_horn_coral_fan
+coraldead_bush_tube=minecraft:dead_tube_coral
+coraldead_bush_brain=minecraft:dead_brain_coral
+coraldead_bush_bubble=minecraft:dead_bubble_coral
+coraldead_bush_fire=minecraft:dead_fire_coral
+coraldead_bush_horn=minecraft:dead_horn_coral
+coraldead_block_tube=minecraft:dead_tube_coral_block
+coraldead_block_brain=minecraft:dead_brain_coral_block
+coraldead_block_bubble=minecraft:dead_bubble_coral_block
+coraldead_block_fire=minecraft:dead_fire_coral_block
+coraldead_block_horn=minecraft:dead_horn_coral_block
+healing_potion=/give @p minecraft:potion{Potion:"minecraft:healing"} 1
+healing2_potion=/give @p minecraft:potion{Potion:"minecraft:strong_healing"} 1
+harming_potion=/give @p minecraft:potion{Potion:"minecraft:harming"} 1
+harming2_potion=/give @p minecraft:potion{Potion:"minecraft:strong_harming"} 1
+
+#slab crafter
+quartz_slab=minecraft:quartz_slab
+smooth_quartz=minecraft:smooth_quartz
+sandstone_slab=minecraft:sandstone_slab
+smooth_sandstone=minecraft:smooth_sandstone
+red_sandstone_slab=minecraft:red_sandstone_slab
+red_smooth_sandstone=minecraft:smooth_red_sandstone
+stone_slab=minecraft:stone_slab
+smooth_stone=minecraft:smooth_stone
+cobblestone_slab=minecraft:cobblestone_slab
+oak_slab=minecraft:oak_slab
+petrified_oak_slab=minecraft:petrified_oak_slab
+
+
+#rare item
+string=minecraft:string
+slimeball=minecraft:slime_ball
+spiderweb=minecraft:cobweb
+stick=minecraft:stick
+deadbush=minecraft:dead_bush
+grass=minecraft:grass
+oak_leaves=minecraft:oak_leaves
+fern=minecraft:fern
+tnt=minecraft:tnt
+button=minecraft:stone_button
+unstabletnt=/give @p minecraft:tnt{unstable:true} 1
+arrow=minecraft:arrow
+tipped_water=/give @p minecraft:tipped_arrow{Potion:"minecraft:water"} 1
+tipped_swift=/give @p minecraft:tipped_arrow{Potion:"minecraft:swiftness"} 1
+tipped_slowness=/give @p minecraft:tipped_arrow{Potion:"minecraft:slowness"} 1
+tipped_strength=/give @p minecraft:tipped_arrow{Potion:"minecraft:strength"} 1
+tipped_weakness=/give @p minecraft:tipped_arrow{Potion:"minecraft:weakness"} 1
+tipped_healing=/give @p minecraft:tipped_arrow{Potion:"minecraft:healing"} 1
+tipped_harming=/give @p minecraft:tipped_arrow{Potion:"minecraft:harming"} 1
+tipped_leaping=/give @p minecraft:tipped_arrow{Potion:"minecraft:leaping"} 1
+tipped_regen=/give @p minecraft:tipped_arrow{Potion:"minecraft:regeneration"} 1
+tipped_poison=/give @p minecraft:tipped_arrow{Potion:"minecraft:poison"} 1
+tipped_fireresist=/give @p minecraft:tipped_arrow{Potion:"minecraft:fire_resistance"} 1
+tipped_waterbreath=/give @p minecraft:tipped_arrow{Potion:"minecraft:water_breathing"} 1
+tipped_nightvision=/give @p minecraft:tipped_arrow{Potion:"minecraft:night_vision"} 1
+tipped_invis=/give @p minecraft:tipped_arrow{Potion:"minecraft:invisibility"} 1
+tipped_turtle=/give @p minecraft:tipped_arrow{Potion:"minecraft:turtle_master"} 1
+tipped_slowfall=/give @p minecraft:tipped_arrow{Potion:"minecraft:slow_falling"} 1
+tipped_luck=/give @p minecraft:tipped_arrow{Potion:"minecraft:luck"} 1
+tipped_unluck=/give @p minecraft:tipped_arrow{Potion:"minecraft:unluck"} 1
+tipped_blind=/give @p minecraft:tipped_arrow{Potion:"minecraft:blindness"} 1
+tipped_condiut=/give @p minecraft:tipped_arrow{Potion:"minecraft:condiut_power"} 1
+tipped_grace=/give @p minecraft:tipped_arrow{Potion:"minecraft:dolphins_grace"} 1
+
+tipped_haste=/give @p minecraft:tipped_arrow{Potion:"minecraft:haste"} 1
+tipped_hunger=/give @p minecraft:tipped_arrow{Potion:"minecraft:hunger"} 1
+tipped_levitation=/give @p minecraft:tipped_arrow{Potion:"minecraft:levitation"} 1
+tipped_mfatigue=/give @p minecraft:tipped_arrow{Potion:"minecraft:mining_fatigue"} 1
+tipped_nausea=/give @p minecraft:tipped_arrow{Potion:"minecraft:nausea"} 1
+tipped_resistance=/give @p minecraft:tipped_arrow{Potion:"minecraft:resistance"} 1
+tipped_wither=/give @p minecraft:tipped_arrow{Potion:"minecraft:wither"} 1
+
+potion_water=/give @p minecraft:potion{Potion:"minecraft:water"} 1
+potion_swift=/give @p minecraft:potion{Potion:"minecraft:swiftness"} 1
+potion_slowness=/give @p minecraft:potion{Potion:"minecraft:slowness"} 1
+potion_strength=/give @p minecraft:potion{Potion:"minecraft:strength"} 1
+potion_weakness=/give @p minecraft:potion{Potion:"minecraft:weakness"} 1
+potion_healing=/give @p minecraft:potion{Potion:"minecraft:healing"} 1
+potion_harming=/give @p minecraft:potion{Potion:"minecraft:harming"} 1
+potion_leaping=/give @p minecraft:potion{Potion:"minecraft:leaping"} 1
+potion_regen=/give @p minecraft:potion{Potion:"minecraft:regeneration"} 1
+potion_poison=/give @p minecraft:potion{Potion:"minecraft:poison"} 1
+potion_fireresist=/give @p minecraft:potion{Potion:"minecraft:fire_resistance"} 1
+potion_waterbreath=/give @p minecraft:potion{Potion:"minecraft:water_breathing"} 1
+potion_nightvision=/give @p minecraft:potion{Potion:"minecraft:night_vision"} 1
+potion_invis=/give @p minecraft:potion{Potion:"minecraft:invisibility"} 1
+potion_turtle=/give @p minecraft:potion{Potion:"minecraft:turtle_master"} 1
+potion_slowfall=/give @p minecraft:potion{Potion:"minecraft:slow_falling"} 1
+rabbit_foot=minecraft:rabbit_foot
+ender_pearl=minecraft:ender_pearl
+black_concrete_powder=minecraft:black_concrete_powder
+prismarine_crystals=minecraft:prismarine_crystals
+prismarine_shard=minecraft:prismarine_shard
+cod=minecraft:cod
+stone_pick=minecraft:stone_pickaxe
+pufferfish=minecraft:pufferfish
+shulker_shell=minecraft:shulker_shell
+iron_ingot=minecraft:iron_ingot
+wither_skull=minecraft:wither_skeleton_skull
+rotten_flesh=minecraft:rotten_flesh
+
+
+
+#This is the villager definition sections
+#Each defines one villager and what trades they have
+#name= specifies the name of the villager
+#head= specifies the player head to equip the village with (can be removed for no head)
+#profession= defines the villager profession (clothes color/style)
+#Then, after the 'trades:' line, you specify the trades this villager has, one per line like:
+#<item1> [amount] [, <item2> [amount]]=<result item> [amount]
+#item1, the equals sign, and result item are required. item2 and the amounts are optional
+#amounts are assumed to be 1 if not specified.  
+#item2 is if you need to trade two different items to get the result item (for example, an empty book and an emerald for an enchanted book)
+#the number of trades should be kept as low as possible for several reasons.
+#1) scrolling through many trades to find the one you want is a bit fustrating
+#2) command block command length is limited to 32500 characters, so if the resulting spawn command is longer than this you won't be able to run it in a command block (this is about 40 player head trades, depending on the textures and names used). Data-packs don't have a command length limit.
+
+[villager]
+name=Coral Crafter
+head=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Flower Bush in Tube Coral in Sand\"}"},SkullOwner:{Id:"3e2d7a66-2c0f-4319-925d-29f2cc9f4ac1",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhmOWQ5MDcyZDdmZDFiNTE3NWU3ODhhMjdlMGZmMDUwZWNiZTQyNWY3ZTc5ZDVmMjgyMjZjMmZkYjdkYzE2NyJ9fX0="}]}}} 1
+profession=librarian
+trades:
+coral_fan_tube 9=coral_block_tube
+coral_fan_brain 9=coral_block_brain
+coral_fan_bubble 9=coral_block_bubble
+coral_fan_fire 9=coral_block_fire
+coral_fan_horn 9=coral_block_horn
+coral_bush_tube 9=coral_block_tube
+coral_bush_brain 9=coral_block_brain
+coral_bush_bubble 9=coral_block_bubble
+coral_bush_fire 9=coral_block_fire
+coral_bush_horn 9=coral_block_horn
+coraldead_fan_tube 9=coraldead_block_tube
+coraldead_fan_brain 9=coraldead_block_brain
+coraldead_fan_bubble 9=coraldead_block_bubble
+coraldead_fan_fire 9=coraldead_block_fire
+coraldead_fan_horn 9=coraldead_block_horn
+coraldead_bush_tube 9=coraldead_block_tube
+coraldead_bush_brain 9=coraldead_block_brain
+coraldead_bush_bubble 9=coraldead_block_bubble
+coraldead_bush_fire 9=coraldead_block_fire
+coraldead_bush_horn 9=coraldead_block_horn
+coraldead_fan_tube 16,healing_potion=coral_fan_tube 16
+coraldead_fan_brain 16,healing_potion=coral_fan_brain 16
+coraldead_fan_bubble 16,healing_potion=coral_fan_bubble 16
+coraldead_fan_fire 16,healing_potion=coral_fan_fire 16
+coraldead_fan_horn 16,healing_potion=coral_fan_horn 16
+coraldead_bush_tube 16,healing_potion=coral_bush_tube 16
+coraldead_bush_brain 16,healing_potion=coral_bush_brain 16
+coraldead_bush_bubble 16,healing_potion=coral_bush_bubble 16
+coraldead_bush_fire 16,healing_potion=coral_bush_fire 16
+coraldead_bush_horn 16,healing_potion=coral_bush_horn 16
+coraldead_block_tube 16,healing2_potion=coral_block_tube 16
+coraldead_block_brain 16,healing2_potion=coral_block_brain 16
+coraldead_block_bubble 16,healing2_potion=coral_block_bubble 16
+coraldead_block_fire 16,healing2_potion=coral_block_fire 16
+coraldead_block_horn 16,healing2_potion=coral_block_horn 16
+coral_fan_tube 16,harming_potion=coraldead_fan_tube 16
+coral_fan_brain 16,harming_potion=coraldead_fan_brain 16
+coral_fan_bubble 16,harming_potion=coraldead_fan_bubble 16
+coral_fan_fire 16,harming_potion=coraldead_fan_fire 16
+coral_fan_horn 16,harming_potion=coraldead_fan_horn 16
+coral_bush_tube 16,harming_potion=coraldead_bush_tube 16
+coral_bush_brain 16,harming_potion=coraldead_bush_brain 16
+coral_bush_bubble 16,harming_potion=coraldead_bush_bubble 16
+coral_bush_fire 16,harming_potion=coraldead_bush_fire 16
+coral_bush_horn 16,harming_potion=coraldead_bush_horn 16
+coral_block_tube 16,harming2_potion=coraldead_block_tube 16
+coral_block_brain 16,harming2_potion=coraldead_block_brain 16
+coral_block_bubble 16,harming2_potion=coraldead_block_bubble 16
+coral_block_fire 16,harming2_potion=coraldead_block_fire 16
+coral_block_horn 16,harming2_potion=coraldead_block_horn 16
+
+[villager]
+name=Slab Crafter
+head=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Stone Slabs\"}"},SkullOwner:{Id:"2ba774b3-db30-4671-a60d-28bff4d9c905",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTUxZTcwMTY5ZWEwMGYwNGE5NDM5MjIxY2YzMzc3MDg0NDE1OWRkNzc1ZmM4ODMwZTMxMWZkOWI1Y2NkMjk2OSJ9fX0="}]}}} 1
+profession=blacksmith
+trades:
+stone_slab 2=smooth_stone
+sandstone_slab 2=smooth_sandstone
+red_sandstone_slab 2=red_smooth_sandstone
+quartz_slab 2=smooth_quartz
+oak_slab 3,cobblestone_slab 3=petrified_oak_slab 6
+
+
+[villager]
+name=Rare Item Crafter
+head=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Emerald Gem\"}"},SkullOwner:{Id:"01bf9227-95fd-413f-af29-4ace675801bc",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODZhZGRiZDVkZWRhZDQwOTk5NDczYmU0YTdmNDhmNjIzNmE3OWEwZGNlOTcxYjVkYmQ3MzcyMDE0YWUzOTRkIn19fQ=="}]}}} 1
+profession=priest
+trades:
+string 6,slimeball=spiderweb
+stick 5=deadbush
+grass,oak_leaves=fern
+tnt,button=unstabletnt
+
+[villager]
+name=Arrow Crafter
+head=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Green Arrow\"}"},SkullOwner:{Id:"9a9f7953-8bc3-4c10-b7e0-f209b057da8c",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTAyYmRhZTRlM2I2ODVmY2UyZjU1OGEyMTk3MDRhNmRkNjZkYTZjYmMyNWIyM2M3ZjRhODIwM2RkNDlkN2Y5MCJ9fX0="}]}}} 1
+profession=nitwit
+trades:
+arrow 64,potion_water=tipped_water 64
+arrow 64,potion_swift=tipped_swift 64
+arrow 64,potion_slowness=tipped_slowness 64
+arrow 64,potion_strength=tipped_strength 64
+arrow 64,potion_weakness=tipped_weakness 64
+arrow 64,potion_healing=tipped_healing 64
+arrow 64,potion_harming=tipped_harming 64
+arrow 64,potion_leaping=tipped_leaping 64
+arrow 64,potion_regen=tipped_regen 64
+arrow 64,potion_poison=tipped_poison 64
+arrow 64,potion_fireresist=tipped_fireresist 64
+arrow 64,potion_waterbreath=tipped_waterbreath 64
+arrow 64,potion_nightvision=tipped_nightvision 64
+arrow 64,potion_invis=tipped_invis 64
+arrow 64,potion_turtle=tipped_turtle 64
+arrow 64,potion_slowfall=tipped_slowfall 64
+arrow 64,rabbit_foot=tipped_luck 64
+arrow 64,ender_pearl=tipped_unluck 64
+arrow 64,black_concrete_powder=tipped_blind 64
+arrow 64,prismarine_crystals 16=tipped_condiut 64
+arrow 64,cod 8=tipped_grace 64
+arrow 64,stone_pick=tipped_haste 64
+arrow 64,pufferfish=tipped_hunger 64
+arrow 64,shulker_shell=tipped_levitation 64
+arrow 64,prismarine_shard 16=tipped_mfatigue 64
+arrow 64,rotten_flesh=tipped_nausea 64
+arrow 64,iron_ingot=tipped_resistance 64
+arrow 64,wither_skull=tipped_wither 64
+
+
+
