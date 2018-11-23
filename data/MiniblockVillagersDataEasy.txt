@@ -7,7 +7,7 @@
 
 [main]
 #Name of the collection of trades - Used for output filename and datapack namespace. No spaces.
-packname=MiniBlockTrades
+packname=MiniBlockTradesEasy
 #Where the villagers should appear relative to where the command is run (X Y Z or X,Y,Z)
 offset=0 1 1
 #Additional offset per command/villager (so they don't appear all on top of each other
@@ -39,15 +39,15 @@ compress3=/give @p minecraft:diamond_block{CanPlaceOn:["minecraft:spawner"],disp
 compress4=/give @p minecraft:diamond_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Somewhat compressed block\"}",Lore:["This block is slightly","smaller than a normal block,","but still much thicker","than a slab"]},Enchantments:[{id:"minecraft:unbreaking",lvl:4}]} 1
 compress5=/give @p minecraft:diamond_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Block to be compressed\"}",Lore:["This block is noticeably","smaller than a normal block,","but not small enough yet",]},Enchantments:[{id:"minecraft:unbreaking",lvl:5}]} 1
 redstoneBlock=minecraft:redstone_block
-beaconblock=minecraft:beacon
-enderDragonHead=minecraft:dragon_head
+#beaconblock=minecraft:beacon
+#enderDragonHead=minecraft:dragon_head
 powerSource1=/give @p minecraft:redstone_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Magic Power Source\"}",Lore:["It glows with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:1}]} 1
 endCrystal=minecraft:end_crystal
 powerSource2=/give @p minecraft:redstone_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Magic Power Source\"}",Lore:["It pulses with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:2}]} 1
 witherSkelHead=minecraft:wither_skeleton_skull
-creeperHead=minecraft:creeper_head
-zombieHead=minecraft:zombie_head
-skeletonHead=minecraft:skeleton_skull
+#creeperHead=minecraft:creeper_head
+#zombieHead=minecraft:zombie_head
+#skeletonHead=minecraft:skeleton_skull
 pufferfishBucket=minecraft:pufferfish_bucket
 slimePower=minecraft:slime_block
 blazePower=minecraft:blaze_rod
@@ -59,22 +59,28 @@ mobPowerSource4=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Mob 
 mobPowerSource5=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Strong Mob Power Source\"}",Lore:["It vibrates with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:5}]} 1
 mobPowerSource6=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Superior Mob Power Source\"}",Lore:["It crackles with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:6}]} 1
 mobPowerSource7=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Full Power Mob Power Source\"}",Lore:["It sparkles with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:7}]} 1
-conduitPower1=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It's charged with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:1}]} 1
-conduitPower2=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It's encrusted with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:2}]} 1
-conduitPower3=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It explodes with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:3}]} 1
-conduitPower4=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It teleports with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:4}]} 1
-conduitPower5=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It has a miasma of energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:5}]} 1
-conduitPower6=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It barely contains it's energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:6}]} 1
-conduitPower7=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It overwhelms you with it's energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:7}]} 1
-conduitBlock=minecraft:conduit
+conduitPower1=/give @p minecraft:emerald_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It's charged with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:1}]} 1
+#conduitPower2=/give @p minecraft:emerald_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It's encrusted with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:2}]} 1
+conduitPower3=/give @p minecraft:emerald_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It explodes with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:3}]} 1
+#conduitPower4=/give @p minecraft:emerald_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It teleports with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:4}]} 1
+conduitPower5=/give @p minecraft:emerald_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It has a miasma of energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:5}]} 1
+#conduitPower6=/give @p minecraft:emerald_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It barely contains it's energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:6}]} 1
+conduitPower7=/give @p minecraft:emerald_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It overwhelms you with it's energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:7}]} 1
+#conduitBlock=minecraft:conduit
 lavaPower=minecraft:lava_bucket
 emeraldBlock=minecraft:emerald_block
 tntCart=minecraft:tnt_minecart
 enderEye=minecraft:ender_eye
-harmingPotion=/give @p minecraft:lingering_potion{Potion:"minecraft:strong_harming"} 1
-undyingTotem=minecraft:totem_of_undying
+#harmingPotion=/give @p minecraft:lingering_potion{Potion:"minecraft:strong_harming"} 1
+#undyingTotem=minecraft:totem_of_undying
 dpick=minecraft:diamond_pickaxe
 obsidianPower=minecraft:obsidian
+skeletonPower=minecraft:bone_block
+zombiePower=minecraft:rotten_flesh
+phantom_membrane=minecraft:phantom_membrane
+nautilus_shell=minecraft:nautilus_shell
+fire_charge=minecraft:fire_charge
+
 
 
 
@@ -1510,6 +1516,8 @@ mnstr_bot=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Bot\"}"},Sku
 
 
 
+
+
 #This is the villager definition sections
 #Each defines one villager and what trades they have
 #name= specifies the name of the villager
@@ -1534,24 +1542,21 @@ profession=priest
 trades:
 diamondBlock, spiston 6=compress1
 compress1, redstoneBlock 6=compress2
-beaconblock, enderDragonHead=powerSource1
+witherSkelHead, fire_charge=powerSource1
 powerSource1, endCrystal=powerSource2
 compress2, powerSource2=compress3
-witherSkelHead, creeperHead=mobPowerSource1
-mobPowerSource1, zombieHead=mobPowerSource2
-mobPowerSource2, skeletonHead=mobPowerSource3
-mobPowerSource3, slimePower=mobPowerSource4
-mobPowerSource4, magmaSlimePower=mobPowerSource5
-mobPowerSource5, blazePower=mobPowerSource6
+enderEye 2, phantom_membrane 7=mobPowerSource1
+mobPowerSource1, magmaSlimePower=mobPowerSource2
+mobPowerSource2, slimePower=mobPowerSource3
+mobPowerSource3, blazePower=mobPowerSource4
+mobPowerSource4, zombiePower 32=mobPowerSource5
+mobPowerSource5, skeletonPower 8=mobPowerSource6
 mobPowerSource6, pufferfishBucket=mobPowerSource7
 compress3, mobPowerSource7=compress4
-conduitBlock, lavaPower=conduitPower1
-conduitPower1,emeraldBlock 6=conduitPower2
-conduitPower2,tntCart=conduitPower3
-conduitPower3,enderEye 2=conduitPower4
-conduitPower4,harmingPotion=conduitPower5
-conduitPower5,obsidianPower 26=conduitPower6
-conduitPower6,undyingTotem=conduitPower7
+emeraldBlock, lavaPower=conduitPower1
+conduitPower1,nautilus_shell=conduitPower3
+conduitPower3,tntCart=conduitPower5
+conduitPower5,obsidianPower 6=conduitPower7
 compress4, conduitPower7=compress5
 compress5, dpick=miniblock 64
 miniblock, diamondBlock=miniblock 64
@@ -3181,3 +3186,4 @@ miniblock5=char_jasonvorhees
 miniblock5=char_freddy
 miniblock5=char_scream
 miniblock5=char_jigsaw
+

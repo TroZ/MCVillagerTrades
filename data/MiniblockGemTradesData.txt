@@ -4,10 +4,25 @@
 #or from
 # https://minecraft-heads.com/custom/heads 
 #
+#This set of trades is compatible with Xisumavoid's Treasure Gems data pack - available at http://xisumavoid.com
+#using the same gems as that datapack and somewhat replaces his Gem Villagers data pack.
+#However, due to the way those gems are defined, this will only work as a data pack, not command block commands.
+#(The gems names are colored using a format that is no longer supported by command blocks
+#but fixing that to use the new format would create incompatible gems (they wouldn't stack
+#or trade the same))
+#
+#Trades:
+# gem trader 				- priest		- all gems for 'intermediate' and back
+# food / drink				- butcher		- aquamarine for cake
+# home / interior			- blacksmith	- topaz for clay pot
+# blocks / mobs 			- priest		- ruby for crafting table
+# letters					- librarian		- amethyst for paper
+# Character / animals		- farmer		- sapphire for Evil Xisuma
+# Player heads				- farmer		- all gems for player_head (already provided by Gem Villagers data pack)
 
 [main]
 #Name of the collection of trades - Used for output filename and datapack namespace. No spaces.
-packname=MiniBlockTrades
+packname=MiniBlockGemTrades
 #Where the villagers should appear relative to where the command is run (X Y Z or X,Y,Z)
 offset=0 1 1
 #Additional offset per command/villager (so they don't appear all on top of each other
@@ -15,66 +30,26 @@ offset_per_command=0 0 1
 #Should the villagers just be spawned normally (none) or in a boat (boat) or minecart (minecart)
 in=minecart
 #Should the command be put in a text file (text), or in a data-pack (data)
-output=text
+output=data
 #If the villager name should be always shown
 showName=true
 
 
-
 [items]
 #defines the items that will be involved in trades.  Should be <name>=<command>, with the command being a standard give commands for the item, or command can simply be the the minecraft block type if it has no extra data.  Can use https://mcstacker.net/ 's give command creator, just leave the target selector section with defaults.  
-miniblock=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Mini-Block\"}"},miniblock:1,SkullOwner:{Id:"5d43c6dd-ca01-466c-9614-764449140917",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTllYjlkYTI2Y2YyZDMzNDEzOTdhN2Y0OTEzYmEzZDM3ZDFhZDEwZWFlMzBhYjI1ZmEzOWNlYjg0YmMifX19"}]}}}
-miniblock1=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Mini-Block\"}"},miniblock:1,SkullOwner:{Id:"5d43c6dd-ca01-466c-9614-764449140917",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTllYjlkYTI2Y2YyZDMzNDEzOTdhN2Y0OTEzYmEzZDM3ZDFhZDEwZWFlMzBhYjI1ZmEzOWNlYjg0YmMifX19"}]}}}
-miniblock2=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Mini-Block\"}"},miniblock:1,SkullOwner:{Id:"5d43c6dd-ca01-466c-9614-764449140917",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTllYjlkYTI2Y2YyZDMzNDEzOTdhN2Y0OTEzYmEzZDM3ZDFhZDEwZWFlMzBhYjI1ZmEzOWNlYjg0YmMifX19"}]}}}
-miniblock3=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Mini-Block\"}"},miniblock:1,SkullOwner:{Id:"5d43c6dd-ca01-466c-9614-764449140917",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTllYjlkYTI2Y2YyZDMzNDEzOTdhN2Y0OTEzYmEzZDM3ZDFhZDEwZWFlMzBhYjI1ZmEzOWNlYjg0YmMifX19"}]}}}
-miniblock4=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Mini-Block\"}"},miniblock:1,SkullOwner:{Id:"5d43c6dd-ca01-466c-9614-764449140917",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTllYjlkYTI2Y2YyZDMzNDEzOTdhN2Y0OTEzYmEzZDM3ZDFhZDEwZWFlMzBhYjI1ZmEzOWNlYjg0YmMifX19"}]}}}
-miniblock5=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Mini-Block\"}"},miniblock:1,SkullOwner:{Id:"5d43c6dd-ca01-466c-9614-764449140917",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTllYjlkYTI2Y2YyZDMzNDEzOTdhN2Y0OTEzYmEzZDM3ZDFhZDEwZWFlMzBhYjI1ZmEzOWNlYjg0YmMifX19"}]}}}
-miniblock6=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Mini-Block\"}"},miniblock:1,SkullOwner:{Id:"5d43c6dd-ca01-466c-9614-764449140917",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTllYjlkYTI2Y2YyZDMzNDEzOTdhN2Y0OTEzYmEzZDM3ZDFhZDEwZWFlMzBhYjI1ZmEzOWNlYjg0YmMifX19"}]}}}
+miniblock1=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Trade Token Food\"}"},SkullOwner:{Id:"aa121f4a-ca3a-4cb4-bc27-ad2887053410",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWNiYjRmZGRhY2I1NDZkYmRmNjgyNzg0MGIxMmFiNDk5OTQzMmZjMmJhMjllOWJkZWU1MzNhNmRkMjU0ZmE4In19fQ=="}]}}} 1
+miniblock2=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Trade Token Decoration\"}"},SkullOwner:{Id:"6c10c296-180d-441a-8321-691af15ce803",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhjNjAwNzM2ZWQ5MDIxYTdmZTcyMjk4OGQwYTQxODE3N2EyZDIzMGJlZjQzODBlMzAxNmU1NzVjN2Y3ZGFjNiJ9fX0="}]}}} 1
+miniblock3=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Trade Token MiniBlock\"}"},SkullOwner:{Id:"e46c1685-b94d-4785-90d5-e86f8289add6",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2U3ZDhjMjQyZDJlNGY4MDI4ZjkzMGJlNzZmMzUwMTRiMjFiNTI1NTIwOGIxYzA0MTgxYjI1NzQxMzFiNzVhIn19fQ=="}]}}}
+miniblock4=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Trade Token Text\"}"},SkullOwner:{Id:"08a21c84-663b-4638-a31e-2f0423a3853f",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY2OTJmOTljYzZkNzgyNDIzMDQxMTA1NTM1ODk0ODQyOThiMmU0YTAyMzNiNzY3NTNmODg4ZTIwN2VmNSJ9fX0="}]}}} 1
+miniblock5=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Trade Token Character\"}"},SkullOwner:{Id:"d93f6ca0-36be-4992-a355-9ff5b94dd76b",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzZlZGVkNDQ3ZDQ0OWI4OTYxMTExMTk3ZjU3MGVhNWU5YzZkZWZlZGUyZWIyODEzY2YzYWU1MjY4YTFhM2NmIn19fQ=="}]}}} 1
+miniblock6=minecraft:player_head
 
-diamondBlock=minecraft:diamond_block
-spiston=minecraft:sticky_piston
-compress1=/give @p minecraft:diamond_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Block to be compressed\"}",Lore:["This block is ready to be","squeezed down into a mini-block"]},Enchantments:[{id:"minecraft:unbreaking",lvl:1}]} 1
-compress2=/give @p minecraft:diamond_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Barely compressed block\"}",Lore:["This block is just a tiny","little bit smaller than","a normal block"]},Enchantments:[{id:"minecraft:unbreaking",lvl:2}]} 1
-compress3=/give @p minecraft:diamond_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Slightly compressed block\"}",Lore:["This block is maybe a pixel","smaller on all sides when","compared to most blocks"]},Enchantments:[{id:"minecraft:unbreaking",lvl:3}]} 1
-compress4=/give @p minecraft:diamond_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Somewhat compressed block\"}",Lore:["This block is slightly","smaller than a normal block,","but still much thicker","than a slab"]},Enchantments:[{id:"minecraft:unbreaking",lvl:4}]} 1
-compress5=/give @p minecraft:diamond_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Block to be compressed\"}",Lore:["This block is noticeably","smaller than a normal block,","but not small enough yet",]},Enchantments:[{id:"minecraft:unbreaking",lvl:5}]} 1
-redstoneBlock=minecraft:redstone_block
-beaconblock=minecraft:beacon
-enderDragonHead=minecraft:dragon_head
-powerSource1=/give @p minecraft:redstone_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Magic Power Source\"}",Lore:["It glows with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:1}]} 1
-endCrystal=minecraft:end_crystal
-powerSource2=/give @p minecraft:redstone_block{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Magic Power Source\"}",Lore:["It pulses with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:2}]} 1
-witherSkelHead=minecraft:wither_skeleton_skull
-creeperHead=minecraft:creeper_head
-zombieHead=minecraft:zombie_head
-skeletonHead=minecraft:skeleton_skull
-pufferfishBucket=minecraft:pufferfish_bucket
-slimePower=minecraft:slime_block
-blazePower=minecraft:blaze_rod
-magmaSlimePower=minecraft:magma_cream
-mobPowerSource1=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Feeble Mob Power Source\"}",Lore:["It shines with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:1}]} 1
-mobPowerSource2=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Weak Mob Power Source\"}",Lore:["It glows with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:2}]} 1
-mobPowerSource3=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Sub-par Mob Power Source\"}",Lore:["It gleams with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:3}]} 1
-mobPowerSource4=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Mob Power Source\"}",Lore:["It pulses with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:4}]} 1
-mobPowerSource5=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Strong Mob Power Source\"}",Lore:["It vibrates with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:5}]} 1
-mobPowerSource6=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Superior Mob Power Source\"}",Lore:["It crackles with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:6}]} 1
-mobPowerSource7=/give @p minecraft:firework_star{display:{Name:"{\"text\":\"Full Power Mob Power Source\"}",Lore:["It sparkles with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:7}]} 1
-conduitPower1=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It's charged with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:1}]} 1
-conduitPower2=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It's encrusted with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:2}]} 1
-conduitPower3=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It explodes with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:3}]} 1
-conduitPower4=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It teleports with energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:4}]} 1
-conduitPower5=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It has a miasma of energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:5}]} 1
-conduitPower6=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It barely contains it's energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:6}]} 1
-conduitPower7=/give @p minecraft:conduit{CanPlaceOn:["minecraft:spawner"],display:{Name:"{\"text\":\"Mega Power Source\"}",Lore:["It overwhelms you with it's energy!"]},Enchantments:[{id:"minecraft:unbreaking",lvl:7}]} 1
-conduitBlock=minecraft:conduit
-lavaPower=minecraft:lava_bucket
-emeraldBlock=minecraft:emerald_block
-tntCart=minecraft:tnt_minecart
-enderEye=minecraft:ender_eye
-harmingPotion=/give @p minecraft:lingering_potion{Potion:"minecraft:strong_harming"} 1
-undyingTotem=minecraft:totem_of_undying
-dpick=minecraft:diamond_pickaxe
-obsidianPower=minecraft:obsidian
+aquamarine=/give @p minecraft:player_head{display:{Name:"{\"text\":\"§r§eAquamarine Gem\"}"},SkullOwner:{Id:"9a860221-a5c6-49a5-a2c8-0bc1fa017c47",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMxOGJiOGI2MjEwMzkxMzZlNDU5YWQ0NjdiOWI5ZjA0NjkzNjdkMjE2ZjU1M2RkNDRkYTNkMjNmYTU4ZjQyZiJ9fX0="}]}}}
+topaz=/give @p minecraft:player_head{display:{Name:"{\"text\":\"§r§eTopaz Gem\"}"},SkullOwner:{Id:"37195137-2b51-4261-9b27-ccc216f7f7d1",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThkMmNlODA3MjZlMmNmOTkwNGI2YzQyOGEzODJhMjRlNmY0NjNhZjgzNTg1OGYxZjM1NDE0NjJiZjEwNTIwOCJ9fX0="}]}}}
+ruby=/give @p minecraft:player_head{display:{Name:"{\"text\":\"§r§eRuby Gem\"}"},SkullOwner:{Id:"68bb46f2-ad7c-4ad7-969b-098b0c72de47",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRiOTBkNmJhNzY0OGU2MjQ3ZmVlNWVjZGQ2MjRlYjRiNWZiM2E3MGNhNGJjZmM1NzNlZDc2NmM5MTBlN2YxNyJ9fX0="}]}}}
+amethyst=/give @p minecraft:player_head{display:{Name:"{\"text\":\"§r§eAmethyst Gem\"}"},SkullOwner:{Id:"a288ea31-4bb2-46ba-90d9-25518b4364db",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc5ZjhjOTI3NzZkNjQyZDExOWY5ZTkyMzYwYjFlNWI5NzFlNjZlNjE0MjhhM2UxYjMxMWQ4YjYxODVlNiJ9fX0="}]}}}
+sapphire=/give @p minecraft:player_head{display:{Name:"{\"text\":\"§r§eSapphire Gem\"}"},SkullOwner:{Id:"b93289fd-e4f1-43f9-8087-6786c426c0ba",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZThjNTExYjk2MWIyZGNhMDEyZjNhNWY1YjQ2NjA3OGEwZWMyMzgwYTc2ZDUxOWVhMzY0YTdkNmRjMjhlMWJiIn19fQ=="}]}}}
+
 
 
 
@@ -1510,6 +1485,8 @@ mnstr_bot=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Bot\"}"},Sku
 
 
 
+
+
 #This is the villager definition sections
 #Each defines one villager and what trades they have
 #name= specifies the name of the villager
@@ -1528,34 +1505,32 @@ mnstr_bot=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Bot\"}"},Sku
 
 
 [villager]
-name=Miniblock Maker
+name=Miniblock Gem Trader
 head=/give @p minecraft:player_head{display:{Name:"{\"text\":\"Crazy Wizard\"}"},SkullOwner:{Id:"cf1ae15a-3bb8-44a2-9f6b-a8d105d40cbe",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGFjN2U5YWJlYzI1ODMwNWE0OGVkMjIyZGM4MWZiMmU1NDNkMWQ2NTQwNGMxYzYwNGIxN2M2NWMwODRlMDNjYSJ9fX0="}]}}} 1
 profession=priest
 trades:
-diamondBlock, spiston 6=compress1
-compress1, redstoneBlock 6=compress2
-beaconblock, enderDragonHead=powerSource1
-powerSource1, endCrystal=powerSource2
-compress2, powerSource2=compress3
-witherSkelHead, creeperHead=mobPowerSource1
-mobPowerSource1, zombieHead=mobPowerSource2
-mobPowerSource2, skeletonHead=mobPowerSource3
-mobPowerSource3, slimePower=mobPowerSource4
-mobPowerSource4, magmaSlimePower=mobPowerSource5
-mobPowerSource5, blazePower=mobPowerSource6
-mobPowerSource6, pufferfishBucket=mobPowerSource7
-compress3, mobPowerSource7=compress4
-conduitBlock, lavaPower=conduitPower1
-conduitPower1,emeraldBlock 6=conduitPower2
-conduitPower2,tntCart=conduitPower3
-conduitPower3,enderEye 2=conduitPower4
-conduitPower4,harmingPotion=conduitPower5
-conduitPower5,obsidianPower 26=conduitPower6
-conduitPower6,undyingTotem=conduitPower7
-compress4, conduitPower7=compress5
-compress5, dpick=miniblock 64
-miniblock, diamondBlock=miniblock 64
+aquamarine=miniblock1 3
+topaz=miniblock2 3
+ruby=miniblock3 3
+amethyst=miniblock4 3
+sapphire=miniblock5 3
+aquamarine=miniblock6 3
+topaz=miniblock6 3
+ruby=miniblock6 3
+amethyst=miniblock6 3
+sapphire=miniblock6 3
 
+miniblock1 3=aquamarine
+miniblock2 3=topaz
+miniblock3 3=ruby
+miniblock4 3=amethyst
+miniblock5 3=sapphire
+
+miniblock6 4=aquamarine
+miniblock6 4=topaz
+miniblock6 4=ruby
+miniblock6 4=amethyst
+miniblock6 4=sapphire
 
 
 [villager]
