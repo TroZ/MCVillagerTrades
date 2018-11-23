@@ -1,3 +1,6 @@
+// Copyright (c) Brian Risinger 2018 All rights reserved.
+// Licensed under the MIT license.
+
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
